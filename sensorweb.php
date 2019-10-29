@@ -12,7 +12,6 @@ if(! $conn )
 {
 	die('Could not connect: ' . mysqli_error());
 }
-
 //$sql = 'SELECT sl,value,time FROM devesh';
 mysqli_select_db($conn,$dbname);
 $retval = mysqli_query( $conn,"SELECT timestamp,ph,temp,hard FROM sensordata");
